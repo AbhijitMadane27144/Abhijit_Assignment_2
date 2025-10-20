@@ -1,0 +1,20 @@
+{
+  "name": "abhijit_assignment-2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.56.0",
+    "@types/dotenv": "^6.1.1",
+    "@types/node": "^24.8.0",
+    "@types/pg": "^8.15.5"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "pg": "^8.16.3"
+  }
+}

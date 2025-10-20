@@ -1,0 +1,45 @@
+{
+  "user": {
+    "name": "Test User",
+    "email": "testuser1@example.com",
+    "password": "123456"
+  },
+  "admin": {
+    "email": "abhijit@admin.com",
+    "password": "admin@123"
+  },
+
+  "ProductData":{
+    "Name":"Kanini",
+    "SKU":"Deloitte",
+    "Price":"5",
+    "Weight":"2",
+    "URLkey":"ESG",
+    "metaTitle":"metaTitle",
+    "metaKeywords":"key",
+    "metaDescription":"Description",
+    "filePath":"D:/Training Framework/Playwright-Abhijit-Lannister/tests/Fileopload/figma.jpg",
+    "filePath1":"tests/Fileopload/figma1.png",
+    "colorselection":"Black",
+    "sizeselection":"XXL",
+    "quantity":"2"
+
+},
+
+"CoupenData":{
+"Code":"Coupen",
+"Description":"Coupen is Creating",
+"amount":"1000",
+"StartDate":"September 17",
+"EndDate":"September 22",
+"quantity":"1",
+"minpurchaseamount":"900",
+"minpurchaseqty":"1"
+
+
+
+}
+}
+
+
+
