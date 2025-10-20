@@ -37,9 +37,9 @@ export default defineConfig({
       open: 'always', // Automatically open report after test run
     }],
 
-   /* ["allure-playwright",
+    ["allure-playwright",
       {outputFolder:'AllureResult'}
-    ] // Allure reporting*/
+    ] // Allure reporting
   ],
 
   
@@ -104,6 +104,3 @@ export default defineConfig({
   reuseExistingServer: true
    },
 });
-
-
-

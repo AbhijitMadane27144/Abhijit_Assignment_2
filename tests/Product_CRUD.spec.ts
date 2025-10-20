@@ -87,13 +87,12 @@ test.describe("Assignment 2 CRUD Demo", () => {
 
     })
 
-    test("TC04 - Database Verification", async () => {
+    test("TC04 - Database Verification @DB", async () => {
     console.log(`Verifying product in database: ${UpdatedrandomProductName}`);
  
     const connection = await getDBConnection();
  
     try {
-      // Step 1: Discover the database schema first
       console.log("Discovering database schema...");
  
       // Get all product-related tables
@@ -112,12 +111,9 @@ test.describe("Assignment 2 CRUD Demo", () => {
         console.log(`Table: ${tableName}`, columns);
       }
  
-      // Step 2: Try to find our product with the correct schema
       let rows: any[] = [];
  
-      // Based on common e-commerce schemas, try these queries
       const queryAttempts = [
-        // Common pattern: product_description for names, product for prices
         `
       SELECT pd.name, p.price, p.sku
       FROM public.product_description pd
