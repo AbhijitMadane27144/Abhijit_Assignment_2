@@ -1,0 +1,143 @@
+Database query error: error: column pd.product_id does not exist
+    at D:\Abhijit Framework\Abhijit_Assignment-2\node_modules\pg\lib\client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at DBConnection.execute (D:\Abhijit Framework\Abhijit_Assignment-2\tests\utils\dbConnection.ts:27:22)
+    at D:\Abhijit Framework\Abhijit_Assignment-2\tests\Product_CRUD.spec.ts:144:18
+    at D:\Abhijit Framework\Abhijit_Assignment-2\node_modules\playwright\lib\worker\workerMain.js:310:9
+    at D:\Abhijit Framework\Abhijit_Assignment-2\node_modules\playwright\lib\worker\testInfo.js:305:11
+    at TimeoutManager.withRunnable (D:\Abhijit Framework\Abhijit_Assignment-2\node_modules\playwright\lib\worker\timeoutManager.js:67:14)
+    at TestInfoImpl._runWithTimeout (D:\Abhijit Framework\Abhijit_Assignment-2\node_modules\playwright\lib\worker\testInfo.js:303:7)
+    at D:\Abhijit Framework\Abhijit_Assignment-2\node_modules\playwright\lib\worker\workerMain.js:308:7
+    at WorkerMain._runTest (D:\Abhijit Framework\Abhijit_Assignment-2\node_modules\playwright\lib\worker\workerMain.js:283:5)
+    at WorkerMain.runTestGroup (D:\Abhijit Framework\Abhijit_Assignment-2\node_modules\playwright\lib\worker\workerMain.js:198:11)
+    at process.<anonymous> (D:\Abhijit Framework\Abhijit_Assignment-2\node_modules\playwright\lib\common\process.js:65:22) {
+  length: 171,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: 'Perhaps you meant to reference the column "p.product_id".',
+  position: '111',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3732',
+  routine: 'errorMissingColumn'
+}
+Query: 
+      SELECT pd.name, p.price, p.sku
+      FROM public.product_description pd
+      JOIN public.product p ON pd.product_id = p.product_id
+      WHERE pd.name = $1
+      
+Params: [ 'Kanini97275' ]
+Database query error: error: column "price" does not exist
+    at D:\Abhijit Framework\Abhijit_Assignment-2\node_modules\pg\lib\client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at DBConnection.execute (D:\Abhijit Framework\Abhijit_Assignment-2\tests\utils\dbConnection.ts:27:22)
+    at D:\Abhijit Framework\Abhijit_Assignment-2\tests\Product_CRUD.spec.ts:144:18
+    at D:\Abhijit Framework\Abhijit_Assignment-2\node_modules\playwright\lib\worker\workerMain.js:310:9
+    at D:\Abhijit Framework\Abhijit_Assignment-2\node_modules\playwright\lib\worker\testInfo.js:305:11
+    at TimeoutManager.withRunnable (D:\Abhijit Framework\Abhijit_Assignment-2\node_modules\playwright\lib\worker\timeoutManager.js:67:14)
+    at TestInfoImpl._runWithTimeout (D:\Abhijit Framework\Abhijit_Assignment-2\node_modules\playwright\lib\worker\testInfo.js:303:7)
+    at D:\Abhijit Framework\Abhijit_Assignment-2\node_modules\playwright\lib\worker\workerMain.js:308:7
+    at WorkerMain._runTest (D:\Abhijit Framework\Abhijit_Assignment-2\node_modules\playwright\lib\worker\workerMain.js:283:5)
+    at WorkerMain.runTestGroup (D:\Abhijit Framework\Abhijit_Assignment-2\node_modules\playwright\lib\worker\workerMain.js:198:11)
+    at process.<anonymous> (D:\Abhijit Framework\Abhijit_Assignment-2\node_modules\playwright\lib\common\process.js:65:22) {
+  length: 105,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '21',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3721',
+  routine: 'errorMissingColumn'
+}
+Query: 
+      SELECT name, price, sku FROM public.product_description WHERE name = $1
+      
+Params: [ 'Kanini97275' ]
+Database query error: error: relation "public.products" does not exist
+    at D:\Abhijit Framework\Abhijit_Assignment-2\node_modules\pg\lib\client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at DBConnection.execute (D:\Abhijit Framework\Abhijit_Assignment-2\tests\utils\dbConnection.ts:27:22)
+    at D:\Abhijit Framework\Abhijit_Assignment-2\tests\Product_CRUD.spec.ts:144:18
+    at D:\Abhijit Framework\Abhijit_Assignment-2\node_modules\playwright\lib\worker\workerMain.js:310:9
+    at D:\Abhijit Framework\Abhijit_Assignment-2\node_modules\playwright\lib\worker\testInfo.js:305:11
+    at TimeoutManager.withRunnable (D:\Abhijit Framework\Abhijit_Assignment-2\node_modules\playwright\lib\worker\timeoutManager.js:67:14)
+    at TestInfoImpl._runWithTimeout (D:\Abhijit Framework\Abhijit_Assignment-2\node_modules\playwright\lib\worker\testInfo.js:303:7)
+    at D:\Abhijit Framework\Abhijit_Assignment-2\node_modules\playwright\lib\worker\workerMain.js:308:7
+    at WorkerMain._runTest (D:\Abhijit Framework\Abhijit_Assignment-2\node_modules\playwright\lib\worker\workerMain.js:283:5)
+    at WorkerMain.runTestGroup (D:\Abhijit Framework\Abhijit_Assignment-2\node_modules\playwright\lib\worker\workerMain.js:198:11)
+    at process.<anonymous> (D:\Abhijit Framework\Abhijit_Assignment-2\node_modules\playwright\lib\common\process.js:65:22) {
+  length: 114,
+  severity: 'ERROR',
+  code: '42P01',
+  detail: undefined,
+  hint: undefined,
+  position: '37',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '1431',
+  routine: 'parserOpenTable'
+}
+Query: 
+      SELECT name, price, sku FROM public.products WHERE name = $1
+      
+Params: [ 'Kanini97275' ]
+Database query error: error: column "cost" does not exist
+    at D:\Abhijit Framework\Abhijit_Assignment-2\node_modules\pg\lib\client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at DBConnection.execute (D:\Abhijit Framework\Abhijit_Assignment-2\tests\utils\dbConnection.ts:27:22)
+    at D:\Abhijit Framework\Abhijit_Assignment-2\tests\Product_CRUD.spec.ts:144:18
+    at D:\Abhijit Framework\Abhijit_Assignment-2\node_modules\playwright\lib\worker\workerMain.js:310:9
+    at D:\Abhijit Framework\Abhijit_Assignment-2\node_modules\playwright\lib\worker\testInfo.js:305:11
+    at TimeoutManager.withRunnable (D:\Abhijit Framework\Abhijit_Assignment-2\node_modules\playwright\lib\worker\timeoutManager.js:67:14)
+    at TestInfoImpl._runWithTimeout (D:\Abhijit Framework\Abhijit_Assignment-2\node_modules\playwright\lib\worker\testInfo.js:303:7)
+    at D:\Abhijit Framework\Abhijit_Assignment-2\node_modules\playwright\lib\worker\workerMain.js:308:7
+    at WorkerMain._runTest (D:\Abhijit Framework\Abhijit_Assignment-2\node_modules\playwright\lib\worker\workerMain.js:283:5)
+    at WorkerMain.runTestGroup (D:\Abhijit Framework\Abhijit_Assignment-2\node_modules\playwright\lib\worker\workerMain.js:198:11)
+    at process.<anonymous> (D:\Abhijit Framework\Abhijit_Assignment-2\node_modules\playwright\lib\common\process.js:65:22) {
+  length: 104,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '21',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3721',
+  routine: 'errorMissingColumn'
+}
+Query: 
+      SELECT name, cost, sku FROM public.product_description WHERE name = $1
+      
+Params: [ 'Kanini97275' ]

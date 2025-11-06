@@ -54,6 +54,8 @@ test.describe("Assignment 2 CRUD Demo", () => {
         await CreateProduct.handleDialogOnSave();
         await CreateProduct.saveProduct();
         await page.waitForTimeout(2000);
+        await page.waitForTimeout(2000);
+
     })
 
     test("Update Product Name @UI", async ({  AdminLogin, CreateProduct }) => {
